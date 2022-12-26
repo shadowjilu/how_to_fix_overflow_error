@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:how_to_fix_overflow_error/text_in_row_screen.dart';
+import 'package:how_to_fix_overflow_error/text_in_tab_screen.dart';
 import 'package:how_to_fix_overflow_error/text_in_text_button_screen.dart';
 
 import 'home_screen.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         // '/': (context) => const HomeScreen(),
         '/row': (context) => const TextInRowScreen(),
         '/text_button': (context) => const TextInTextButtonScreen(),
+        '/tab':(context) => const TextInTabScreen(),
       },
     );
   }

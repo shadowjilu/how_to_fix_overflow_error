@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:how_to_fix_overflow_error/text_in_row_screen.dart';
+import 'package:how_to_fix_overflow_error/text_in_tab_screen.dart';
 import 'package:how_to_fix_overflow_error/text_in_text_button_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -25,11 +26,23 @@ class HomeScreen extends StatelessWidget {
                 },
                 child: const Text('Text in Row')),
             TextButton(
-                onPressed: () { Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const TextInTextButtonScreen(),
-                  ),
-                );}, child: const Text('Text in TextButton')),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const TextInTextButtonScreen(),
+                    ),
+                  );
+                },
+                child: const Text('Text in TextButton')),
+            TextButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const TextInTabScreen(),
+                    ),
+                  );
+                },
+                child: const Text('Text in Tab')),
           ],
         ),
       ),
